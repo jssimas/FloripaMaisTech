@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pizzaria do Jean</title>
+</head>
+
+<body>
+    <header>
+        <h2>O melhor delivery da cidade!</h2>
+    </header>
+    <main>
+        <section>
+            <fieldset>
+                <legend> Monte sua pizza como desejar:</legend>
+                <label>Selecione a massa:</label>
+                <select id="massa" onchange="inserirAdicionais()">
+                    <option></option>
+                    <option>Comum</option>
+                    <option>Integral</option>
+                    <option>Temperada</option>
+                    <option>Sem glúten</option>
+                    <option>Fermentação Natural</option>
+                </select>
+                <br><br>
+                <label>Selecione a borda:</label>
+                <select id="borda" onchange="inserirAdicionais()">
+                    <option></option>
+                    <option>Catupiry</option>
+                    <option>Cheedar</option>
+                </select>
+                <br><br>
+                <label>Digite os sabores(Máximo 3):</label>
+                <input id="campo" type="text" placeholder="Digite os sabores">
+                <button id="botao" >Incluir</button>
+                <ul id="lista"></ul>
+                <br><br>
+                <label>--Nosso cardápio--</label>
+                <ul id="Cardapio">
+                    <li>Margherita</li>
+                    <li>Quatro Queijos</li>
+                    <li>Calabresa</li>
+                    <li>Lombinho</li>
+                    <li>Frango com Catupiry</li>
+                    <li>Milho com Catupiry</li>
+                    <li>Alho e Óleo</li>
+                    <li>Portugues</li>
+                    <li>Paulista</li>
+                    <li>Strogonogg de Carne</li>
+                    <li>Bacon</li>
+                    <li>Chocolate com Morango</li>
+                    <li>Chimia</li>
+                    <li>Prestígio</li>
+                    <li>Banana com Doce de Leite</li>
+                </ul>
+                <button id="botaoPedido">Enviar pedido</button>
+            </fieldset>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+Graziela Guimaraes19:56
+function App() {
+
+
+  let [contador, setarContador] = useState(0);
+
+  function alteraEstado(){
+    setarContador(contador ++)
+  }
+
+  return(
+    <div className='App'> 
+      <h1>O contador é: {contador}</h1>
+
+      <button onClick={alteraEstado}>Adicionar valor ao contador</button>
+    </div>
+  )
+  
+}
+
+export default App;
+Graziela Guimaraes20:01
+Poderia ser utilizado pra fazer o update de um crud?
+Sabrina Grifante20:05
+professor, consegue colar o código aqui no chat?
+Bruno Costa20:05
+import './App.css'
+import {useState} from 'react'
+
+function App() {
+
+  const [usuario, setUsuario] = useState({nome: "Bruno", idade: 24})
+
+  // function AlterarContador(){
+  //   setCount(count + 1)
+  // }
+
+  function AlterarIdade(){
+    setUsuario({nome: usuario.nome, idade: usuario.idade + 1})
+  }
+
+  return (
+    <div className="App">
+      <h1>
+        O usuario {usuario.nome} tem {usuario.idade} anos
+      </h1>
+      <button onClick={AlterarIdade}>
+        + adicionar
+      </button>
+    </
+Reginaldo Souza de Albuquerque Mello20:05
+Bruno, as funções Hook então se limitam a exibição na tela somente, front-end, ainda. Correto?

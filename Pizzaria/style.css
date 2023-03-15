@@ -1,0 +1,27 @@
+header {
+    background-image: url('./pizza-banner.jpg');
+    height: 300px;
+    background-position-y: -300px;
+    width: 100%;
+}
+
+header h2 {
+    color: orange;
+    text-align: right;
+}
+
+main{
+    width: 100%;
+}
+
+section {
+    width: 60%;
+    margin: auto;
+}
+
+section fieldset{
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
