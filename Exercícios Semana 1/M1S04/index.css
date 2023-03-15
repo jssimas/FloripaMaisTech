@@ -23,3 +23,8 @@ button {
     margin: 20px;
 
   }
+
+  #imagem{
+    width: 100px;
+    height: 100px;
+  }
